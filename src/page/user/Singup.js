@@ -12,7 +12,6 @@ const Signup = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [messageEmail, setMessageEmail] = useState("");
   const [messagePassword, setMessagePassword] = useState("");
-  const [messageConfirmPassword, setMessageConfirmPassword] = useState("");
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -123,7 +122,7 @@ const Signup = () => {
         <div className="mt-[9em] ">
            <div className="w-full max-w-sm bg-slate-100  flex  flex-col p-4 ">
               <div className="w-20 h-20 overflow-hidden rounded-full   m-auto relative ">
-                <img src={data.image ? data.image : loginSignupImage} className="w-full h-full" />
+                <img src={data.image ? data.image : loginSignupImage} alt="ime" className="w-full h-full" />
 
                 <label htmlFor="profileImage">
                   <div className="absolute bottom-0 h-1/3  bg-slate-500 bg-opacity-50 w-full text-center cursor-pointer">
@@ -213,7 +212,7 @@ const Signup = () => {
       <div className='p-3 bg-white md:p-4'>
       <div className="w-full max-w-sm bg-slate-100 rounded my-[8%] ml-[35%] flex  flex-col p-4 ">
         <div className="w-20 h-20 overflow-hidden rounded-full   m-auto relative ">
-          <img src={data.image ? data.image : loginSignupImage} className="w-full h-full" />
+          <img src={data.image ? data.image : loginSignupImage} alt="imge" className="w-full h-full" />
 
           <label htmlFor="profileImage">
             <div className="absolute bottom-0 h-1/3  bg-slate-500 bg-opacity-50 w-full text-center cursor-pointer">

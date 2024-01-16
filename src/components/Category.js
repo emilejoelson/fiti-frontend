@@ -41,7 +41,7 @@ function Category() {
           </div>
         ))}
       </div>
-      <div style={{ borderRadius: "0 0 20px 20px", maxHeight: '500px', overflowY: 'auto' }} className={`pl-12 pr-12 bg-slate-800 mb-10 pb-3 grid grid-cols-5 gap-4 ${subcategory1Visibility[selectedSubcategory1] ? '' : 'invisible'}`}>
+      <div style={{ borderRadius: "0 0 20px 20px", maxHeight: '500px', overflowY: 'auto' }} className={`pl-12 pr-12 bg-slate-800 b-10 pb-10 grid grid-cols-5 gap-4 ${subcategory1Visibility[selectedSubcategory1] ? '' : 'invisible'}`}>
         {productData
           .filter(product => product.subcategory1 === selectedSubcategory1)
           .map(el => (

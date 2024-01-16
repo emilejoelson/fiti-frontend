@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { DataGrid } from '@mui/x-data-grid';
-import { deleteUser, fetchUserlocals } from '../../redux/userSlice';
+import {  fetchUserlocals } from '../../redux/userSlice';
 import { Box } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import { tokens } from '../../theme';

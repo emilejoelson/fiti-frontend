@@ -68,7 +68,7 @@ const Newproduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { name, image, category, subcategory, subcategory1, subcategory2, price } = data;
+    const { name, image, category, price } = data;
 
     if (name && image && category && price) {
       const fetchData = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/uploadProduct`, {

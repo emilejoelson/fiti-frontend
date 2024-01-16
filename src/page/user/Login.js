@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import loginSignupImage from "./../../assest/login-animation.gif";
 import { BiShow, BiHide } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { BsEmojiSmileUpsideDown } from "react-icons/bs";
 import {toast} from "react-hot-toast"
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginRedux } from "../../redux/userSlice";
-import { isLoggedIn } from "./Auth";
 import Footer from "../../components/Footer";
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -81,7 +79,7 @@ const Login = () => {
                <div className="w-full max-w-sm bg-slate-100  flex  flex-col p-4">
                   {/* <h1 className='text-center text-2xl font-bold'>Sign up</h1> */}
                   <div className="w-20 overflow-hidden  rounded-full drop-shadow-md shadow-md m-auto">
-                    <img src={loginSignupImage} className="w-full" />
+                    <img src={loginSignupImage} alt="sejk" className="w-full" />
                   </div>
 
                   <form className="w-full py-3 flex flex-col" onSubmit={handleSubmit}>
@@ -136,7 +134,7 @@ const Login = () => {
             <div className="w-full max-w-sm bg-slate-100 rounded my-[10%] ml-[35%] flex  flex-col p-4">
               {/* <h1 className='text-center text-2xl font-bold'>Sign up</h1> */}
               <div className="w-20 overflow-hidden  rounded-full drop-shadow-md shadow-md m-auto">
-                <img src={loginSignupImage} className="w-full" />
+                <img src={loginSignupImage} alt="kfd" className="w-full" />
               </div>
 
               <form className="w-full py-3 flex flex-col" onSubmit={handleSubmit}>

@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-import Slider from "react-slick";
+import React, {  useState } from 'react';
 import Footer from '../../components/Footer';
 import db from "../../assest/images/offrespecialle.jpg";
 import db1 from  "../../assest/images/dbsearch01.png";
@@ -8,8 +7,6 @@ import modehome1 from "../../assest/images/accessa.jpg";
 import modefemme1 from "../../assest/images/accessc.jpg";
 import pm1 from "../../assest/images/accesse.jpg";
 import c1 from "../../assest/images/couture.gif";
-import hf1 from "../../assest/images/goodhairstylewomen.gif";
-import hh1 from "../../assest/images/haircut.gif";
 import SwiperCore, { EffectCoverflow, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
@@ -43,7 +40,7 @@ function OffreOfficiel() {
           .
       </div>
        <div className="ml-[10em] bg-slate-100 mt-10 h-[230px] mr-[10em]" style={{borderRadius:"12px",border:"10px solid #C49A45"}}>
-          <img src={db} alt="Image product" style={{all:"unset", width:"100%"}} className="imgdb" />
+          <img src={db} alt="Imag produt" style={{all:"unset", width:"100%"}} className="imgdb" />
        </div>
          
        <div className="cat bg-black ml-20 mr-20 mt-10">
@@ -112,7 +109,7 @@ function OffreOfficiel() {
           </div>
         </div>
         <div className="bg-slate-100 ml-20 mr-20 mt-10 h-[250px] mb-10 " style={{borderRadius:"12px",border:"10px solid #C49A45"}}>
-        <img src={db1} alt="Image product" style={{all:"unset", width:"100%"}} className="imgdb" />
+        <img src={db1} alt="Imae product" style={{all:"unset", width:"100%"}} className="imgdb" />
         </div>
 
              {/* Accessoires */}

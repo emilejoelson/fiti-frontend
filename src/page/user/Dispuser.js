@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { DataGrid } from '@mui/x-data-grid';
 import { fetchUsers, deleteUser } from '../../redux/userSlice';
@@ -15,8 +15,6 @@ function Dispuser() {
 
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.user.userList);
-  const nameList = [...new Set(userData.map((el) => el.firstName))];
-
   useEffect(() => {
     dispatch(fetchUsers());
   }, [dispatch]);
@@ -31,8 +29,6 @@ function Dispuser() {
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
-          // Remove the deleted user from the userData state
-          const updatedUserData = userData.filter((user) => user._id !== userId);
           dispatch(deleteUser(userId));
           toast.success(data.message);
         } else {

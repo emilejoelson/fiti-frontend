@@ -15,9 +15,7 @@ function Dischatadmin() {
 
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.user.userList);
-  const nameList = [...new Set(userData.map((el) => el.lastName))];
   const chatData = useSelector((state) => state.chat.messages);
-  const error = useSelector((state) => state.chat.error);
 
   useEffect(() => {
     dispatch(fetchUsers());

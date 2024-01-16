@@ -1,4 +1,4 @@
-import {createSlice,createAsyncThunk} from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
 
 
 // Load the initial state from local storage if available
